@@ -1,0 +1,19 @@
+table,
+th,
+td {
+  border: 1px solid black;
+}
+table {
+  width: 100%;
+  background-color: beige;
+}
+h2 {
+  text-align: center;
+}
+html {
+  background-color: bisque;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+tr {
+  border: 1px solid red;
+}

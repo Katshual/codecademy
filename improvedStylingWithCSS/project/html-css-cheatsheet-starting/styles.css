@@ -1,0 +1,14 @@
+* {
+  background-color: honeydew;
+  font-family: "Merriweather";
+}
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+}
