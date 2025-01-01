@@ -7,4 +7,5 @@ header {
   background-repeat: no-repeat;
   /*dimension du header*/
   height: clamp(200px, 30vh, 500px);
+  text-align: center;
 }
