@@ -1,0 +1,24 @@
+/*typo CSS*/
+body {
+  font-family: roboto, sans-serif;
+}
+h1,
+h2,
+h3 {
+  font-family: inter, sans-serif;
+}
+p {
+  font-family: lexend, sans-serif;
+}
+
+.roboto {
+  font-family: roboto;
+}
+
+.inter {
+  font-family: inter;
+}
+
+.lexend {
+  font-family: lexend;
+}

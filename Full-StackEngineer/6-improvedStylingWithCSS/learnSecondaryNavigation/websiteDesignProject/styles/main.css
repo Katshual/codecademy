@@ -1,0 +1,11 @@
+header {
+  /*background image*/
+  background-image: url("../assets/images/med-badr-chemmaoui-ZSPBhokqDMc-unsplash.jpg");
+  max-height: 20vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /*dimension du header*/
+  height: clamp(200px, 30vh, 500px);
+  text-align: center;
+}
