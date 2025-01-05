@@ -26,16 +26,21 @@ h1 {
 }
 
 #flexstart {
+  justify-content: flex-start;
 }
 
 #flexend {
+  justify-content: flex-end;
 }
 
 #center {
+  justify-content: center;
 }
 
 #spacearound {
+  justify-content: space-around;
 }
 
 #spacebetween {
+  justify-content: space-between;
 }
