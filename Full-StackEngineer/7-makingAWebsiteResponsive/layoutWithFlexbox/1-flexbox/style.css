@@ -27,10 +27,12 @@ h1 {
 .spacer {
   max-width: 1200px;
   margin: auto;
+  border: 2px solid black;
 }
 
 .main {
   background-color: #ffc200;
+  border: 2px solid white;
 }
 
 /*Header Section*/
@@ -88,12 +90,15 @@ h1 {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  border: 2px solid gray;
+  display: flex;
 }
 
 .col {
   display: inline-flex;
   flex-direction: column;
   justify-content: space-between;
+  border: 2px solid whitesmoke;
 }
 
 #expertise {
