@@ -1,0 +1,38 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
+}
+
+.header {
+  position: fixed;
+  height: 69px;
+  border-bottom: 1px solid seashell;
+  display: flex;
+}
+.logo {
+  height: 50px;
+}
+.header .menu {
+  text-decoration: underline;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.jumbotron {
+  height: 700px;
+  width: 1200px;
+}
+
+.featured-tea {
+  width: 1000px;
+}
+
+img {
+  padding-bottom: 10px;
+  height: 200px;
+  width: 300px;
+}
