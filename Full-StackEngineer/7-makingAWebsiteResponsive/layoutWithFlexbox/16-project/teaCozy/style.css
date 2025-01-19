@@ -18,6 +18,7 @@ html {
   width: 100%;
   padding: 10px 20px;
 }
+
 .logo {
   height: 50px;
 }
@@ -26,7 +27,7 @@ html {
   text-decoration: underline;
   display: flex;
   margin: 0;
-  padding: 0;
+  padding-right: 50px;
 }
 
 .menu ul li {
@@ -42,6 +43,7 @@ html {
   justify-content: center;
   align-items: center;
   background-image: url("images/img-mission-background.jpg");
+  margin: auto;
 }
 
 .main {
@@ -91,6 +93,7 @@ img {
   flex-wrap: wrap;
   justify-content: center;
   background-size: cover;
+  margin: auto;
 }
 
 .location.title {
