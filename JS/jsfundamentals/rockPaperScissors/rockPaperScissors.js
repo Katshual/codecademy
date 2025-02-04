@@ -1,7 +1,8 @@
+console.log("hi");
 const getUserChoice = (userInput) => {
   if (!userInput || typeof userInput !== "string") {
     console.log("Invalid choice");
-    return null;
+    return;
   }
 
   userInput = userInput.toLowerCase();
@@ -9,12 +10,12 @@ const getUserChoice = (userInput) => {
   if (
     userInput === "rock" ||
     userInput === "paper" ||
-    userInput === "scissors"
+    userInput === "scissors" ||
+    userInput === "bomb"
   ) {
     return userInput;
   } else {
     console.log("Invalid choice");
-    return null;
   }
 };
 
@@ -24,50 +25,52 @@ function getComputerChoice() {
     return "rock";
   } else if (randomNumber === 1) {
     return "paper";
-  } else {
+  } else if (randomNumber === 2) {
     return "scissors";
+  } else {
+    console.log("invalid choice");
   }
 }
 
+/*let userChoice=getUserChoice()
+  let computerChoice=getComputerChoice()*/
 function determineWinner(userChoice, computerChoice) {
   if (userChoice === computerChoice) {
     return "It's a tie game!";
   }
-
   if (userChoice === "rock") {
-    return computerChoice === "paper" ? "Computer wins" : "User wins";
+    if (computerChoice === "paper") {
+      return "Computer wins";
+    } else {
+      return "User wins";
+    }
   }
-
   if (userChoice === "paper") {
-    return computerChoice === "scissors" ? "Computer wins" : "User wins";
+    if (computerChoice === "scissors") {
+      return "Computer wins";
+    }
+    if (computerChoice === "rock") {
+      return "User Wins";
+    }
   }
 
   if (userChoice === "scissors") {
-    return computerChoice === "rock" ? "Computer wins" : "User wins";
+    if (computerChoice === "rock") {
+      return "Computer wins";
+    }
+    if (computerChoice === "paper") {
+      return "User wins";
+    }
+  }
+  if (userChoice === "bomb") {
+    return "User wins!";
   }
 }
-
 function playgame() {
-  // Simuler une entrée utilisateur (remplacez par un prompt si nécessaire)
-  const userInput = prompt(
-    "Enter your choice: rock, paper, or scissors"
-  ).trim();
-
-  let userChoice = getUserChoice(userInput);
-
-  if (!userChoice) {
-    console.log("Game aborted due to invalid input.");
-    return;
-  }
-
+  let userChoice = getUserChoice("rock");
   let computerChoice = getComputerChoice();
-
-  console.log(`User choice: ${userChoice}`);
-  console.log(`Computer choice: ${computerChoice}`);
-
-  let result = determineWinner(userChoice, computerChoice);
-
-  console.log(result);
+  console.log(userChoice);
+  console.log(computerChoice);
+  console.log(determineWinner(userChoice, computerChoice));
 }
-
 playgame();
